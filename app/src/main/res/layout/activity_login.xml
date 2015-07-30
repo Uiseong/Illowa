@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="org.androidtown.illowa.LoginActivity">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button_login"
+        android:textColor="#ffffff"
+        android:background="#ff1320ff"
+        android:layout_above="@+id/button_sign"
+        android:layout_alignLeft="@+id/button_sign"
+        android:layout_alignStart="@+id/button_sign"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/button_sign"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:background="#ff5e54ff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_id"
+        android:hint="  ID"
+        android:layout_above="@+id/editText_pwd"
+        android:layout_alignLeft="@+id/button_login"
+        android:layout_alignStart="@+id/button_login"
+        android:layout_marginBottom="20dp"
+        android:layout_alignRight="@+id/button_login"
+        android:layout_alignEnd="@+id/button_login"
+        android:background="#ff5cfffd"
+        android:textColorHint="#ffffff"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_pwd"
+        android:hint="  PASSWORD"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/editText_id"
+        android:layout_alignEnd="@+id/editText_id"
+        android:layout_alignLeft="@+id/editText_id"
+        android:layout_alignStart="@+id/editText_id"
+        android:background="#ff5cfffd"
+        android:textColorHint="#ffffff"
+        android:textSize="30dp" />
+</RelativeLayout>
